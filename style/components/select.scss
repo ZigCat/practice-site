@@ -1,0 +1,65 @@
+.select{
+    &-inner{
+
+    }
+
+    &-head{
+        width: 200px;
+        border: 1px solid black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: $accent;
+        cursor: pointer;
+
+        &-active{
+            width: 200px;
+            border: 1px solid black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            background-color: $accent;
+            cursor: pointer;
+
+            >h3{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
+        >h3{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    &-menu{
+        width: 200px;
+        position: absolute;
+        border: 1px solid black;
+        border-top: none;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: $addwindow;
+    }
+
+    &-item{
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding: 5px 0;
+        cursor: pointer;
+
+        &:last-child{
+            border: none;
+        }
+
+        >a{
+            transition: 0.2s linear;
+            &:hover{
+                color: $backcolor;
+            }
+        }
+    }
+}

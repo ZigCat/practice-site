@@ -1,0 +1,142 @@
+.layout {
+  &-top {
+    border-bottom: 1px solid black;
+    background-color: $backcolor;
+    padding: 20px 0;
+    &-inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-company {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 20%;
+
+      > a {
+        width: 120px;
+        height: 60px;
+        > img {
+          width: 120px;
+          height: 60px;
+          background-color: white;
+        }
+      }
+
+      &-city {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 4px 10px;
+        background-color: $accent;
+        cursor: pointer;
+
+        &:hover {
+          color: $backcolor;
+          transition: 0.2s linear;
+        }
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 40%;
+
+      &-lang {
+        border: 1px solid black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 4px 10px;
+        background-color: $accent;
+        cursor: pointer;
+
+        &:hover {
+          > p > a {
+            color: $backcolor;
+            transition: 0.2s linear;
+          }
+        }
+      }
+
+      &-tel {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 4px 10px;
+        background-color: $accent;
+        cursor: pointer;
+
+        &:hover {
+          color: $backcolor;
+          transition: 0.2s linear;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: $backcolor;
+    border-top: 1px solid black;
+    &-top {
+      display: flex;
+      justify-content: center;
+      > h1 {
+        background-color: #a2b4d0;
+        border: black 1px solid;
+        border-radius: 20px;
+        font-size: 50px;
+        font-family: "Comfortaa";
+        text-align: center;
+        width: 20%;
+        height: 100%;
+      }
+    }
+
+    &-body {
+      &-icons {
+        display: flex;
+        flex-direction: row;
+        border: black 1px solid;
+        border-radius: 30px;
+        background-color: #a2b4d0;
+        width: 13%;
+      }
+
+      &-firsticon {
+        background-image: url("/inst.old.png");
+        transition: 0.4s linear;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+          background-image: url("/inst.new.png");
+        }
+      }
+
+      &-secondicon {
+        background-image: url("/vk.old.png");
+        transition: 0.4s linear;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+          background-image: url("/vk.new.png");
+        }
+      }
+
+      &-thirdicon {
+        background-image: url("/fc.old.png");
+        transition: 0.4s linear;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+          background-image: url("/fc.new.png");
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.cabinet{
+    &-inner{
+        background-color: $addwindow;
+        width: 210px;
+        border-top-left-radius: 20px;
+        border: 1px solid black;
+    }
+
+    &-head{
+        border-bottom: 1px solid black;
+
+        >h1{
+            font-size: 15px;
+            padding: 0 27px;
+            width: 140px;
+        }
+    }
+
+    &-form{
+        &-rows{
+            padding: 30px 30px;
+            display: flex;
+            flex-direction: column;
+
+            >input{
+                padding: 2px 3px;
+                width: 150px;
+                font-family: 'Comfortaa';
+                font-size: 15px;
+                border-radius: 5px;
+                border: 1px solid black;
+                margin-bottom: 10px;
+            }
+        }
+
+        &-submit{
+            background-color: $accent;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px 20px;
+            width: 35%;
+            margin-left: 23px;
+            margin-top: 20px;
+            cursor: pointer;
+
+            &:hover{
+                color: $backcolor;
+                transition: 0.2s linear;
+            }
+        }
+    }
+}

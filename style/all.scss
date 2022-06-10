@@ -1,0 +1,29 @@
+@import "./utils/vars.scss";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Comfortaa';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-head{
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+@import "./components/layout.scss";
+@import "./components/cabinet.scss";
+@import "./components/slider.scss";
+@import "./components/currency.scss";
+@import "./components/select.scss";
+@import "./pages/index.scss";
+@import "./pages/products.scss";
+@import "./pages/catalog.scss";

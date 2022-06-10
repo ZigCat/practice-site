@@ -1,0 +1,60 @@
+.mainpage{
+    background-color: $backcolor;
+    padding: 20px 0;
+
+    &-inner{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    &-frow{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-pop{
+            margin-left: -20px;
+            
+            >img{
+                border-radius: 20px;
+                width: 400px;
+                height: 500px;
+            }
+        }
+
+        &-right{
+            height: 370px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    &-srow{
+        padding: 0 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-selects{
+            width: 650px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &-pop{
+            width: 450px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            >img{
+                width: 100px;
+                height: 150px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
